@@ -29,7 +29,7 @@
 		<noscript>
 			<p class="boxAlert">تنبيه: كثير من خدمات الموقع لن تعمل لديك! لأن الجافاسكربت لا تعمل في المتصفح الذي تستخدمه الآن. يرجى تفعيلها للحصول على كل خدمات الموقع.</p>
 		</noscript>
-		<?include_once($a = str_replace('Page', __DIR__ .'/', str_replace('View', '', get_class($var))).'.tbl.php')?>
+		<?php include_once(str_replace('Page', __DIR__ .'/', str_replace('View', '', get_class($var))).'.tbl.php')?>
 	</div>
 </div>	
 

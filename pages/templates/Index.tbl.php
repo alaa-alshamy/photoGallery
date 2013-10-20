@@ -86,6 +86,6 @@
 <div class="indexSearch">
 	<form>
 		<label for="picName">اسم الصورة: </label><input name="picName" id="picName">
-		<img src="../../images/search.jpg">
 	</form>
+    <img src="../../images/search.jpg">
 </div>
