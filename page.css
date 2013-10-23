@@ -2,7 +2,7 @@ body{
     margin: 1px;
     padding: 0;
     text-align: justify;
-    background-color: #a55118;
+    background-color: #222E38;
     font-size: 14px;
 }
 
@@ -26,7 +26,6 @@ body{
     border: 1px solid #AABBDD;
     border-radius: 10px;
     overflow: hidden;
-    padding: 0;
     position: relative;    
     z-index: 500;
 }
@@ -75,9 +74,61 @@ body{
 
 .indexSearch {
 	margin: 20px 0 20px 0;
-	background-color: #a55118;
+	background-color: #DBD3CD;
 	border: 1px solid #E6E8EA;
-	height: 100px;
 	border-radius: 10px;
 }
+.blockHead {
+    background-color: #7A7A7A;
+	border-bottom: 1px solid #E6E8EA;
+    padding: 8px 5px;
+    border-radius: 6px;
+}
+.blockBody {
+    padding: 8px 5px;
+	width: 100% ;
+	height: 100%;
 
+}
+.blockBody > img {
+    width: 500px;
+    height: 150px;
+}
+.sections{
+    margin: 20px 0 20px 0;
+    background-color: #DBD3CD;
+    border: 1px solid #E6E8EA;
+    border-radius: 10px;
+}
+.clear {
+	clear : both;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+	padding: 40px 40px;
+}
+input    {
+	width:375px;
+	display:block;
+	border: 1px solid #999;
+	height: 25px;
+	margin: 20px 0 20px 0;
+
+}
+.section {
+	float: left;
+	height: 150px;
+	width:150px ;
+	margin: 10px 20px 10px 15px;
+	background-color: #F6F8FA;
+	border: 1px solid #77AADD;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.section > a > img {
+	width: 146px;
+	height: 146px;
+}

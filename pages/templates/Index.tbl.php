@@ -84,8 +84,84 @@
 	<div class="slideNext">التالية</div>
 </div>
 <div class="indexSearch">
-	<form>
-		<label for="picName">اسم الصورة: </label><input name="picName" id="picName">
-	</form>
-    <img src="../../images/search.jpg">
+	<div class="blockHead">
+		<span>إبحث عن صورة:</span>
+	</div>
+	<div class="blockBody">
+		<form class="right">
+			<label for="picName">اسم الصورة: </label><input name="picName" id="picName">
+		</form>
+		<img class="left" src="../../images/search(3).png">
+		<div class="clear"></div>
+	</div>
+</div>
+<div class="sections">
+    <div class="blockHead">
+        <a>أقسام معرض الصور:</a>
+    </div>
+    <div class="blockBody">
+		<table>
+			<tr>
+				<td>
+					<div class="section">
+						<a><img src="../../images/search(4).png"></a>
+					</div>
+				</td>
+				<td>
+					<div class="section">
+						<a><img src="../../images/search(4).png"></a>
+					</div>
+				</td>
+				<td>
+					<div class="section">
+
+						<a><img src="../../images/search(4).png"></a>
+					</div>
+				</td>
+				<td>
+					<div class="section">
+
+						<a><img src="../../images/search(4).png"></a>
+					</div>
+				</td>
+				<td>
+					<div class="section">
+
+						<a><img src="../../images/search(4).png"></a>
+					</div>
+				</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="section">
+					<a><img src="../../images/search(4).png"></a>
+				</div>
+			</td>
+			<td>
+				<div class="section">
+					<a><img src="../../images/search(4).png"></a>
+				</div>
+			</td>
+			<td>
+				<div class="section">
+
+					<a><img src="../../images/search(4).png"></a>
+				</div>
+			</td>
+			<td>
+				<div class="section">
+
+					<a><img src="../../images/search(4).png"></a>
+				</div>
+			</td>
+			<td>
+				<div class="section">
+
+					<a><img src="../../images/search(4).png"></a>
+				</div>
+			</td>
+		</tr>
+    </div>
+	</table>
+
 </div>
