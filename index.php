@@ -18,7 +18,8 @@ function choosePage()
 		default:
 			$currentPage = str_replace('?', '', substr($_GET['page'], 1));
 			$pageMap = array(
-				'page/error.php'=>'PageError',
+				'error.php'=>'PageError',
+				'sectionphoto.php'=>'PageSectionPhoto',
 				'index.php'=>'PageIndex'
 			);
 		
