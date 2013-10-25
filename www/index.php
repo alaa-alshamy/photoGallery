@@ -29,7 +29,7 @@ function choosePage()
 		
 			$pageContents = isset($pageMap[$currentPage]) ? $pageMap[$currentPage] : 'PageError';
 			/** @noinspection PhpIncludeInspection */
-			include_once(str_replace('Page', __DIR__ . '/pages/controllers/', $pageContents) . '.php');
+			include_once(str_replace('Page', __DIR__ . '/../pages/controllers/', $pageContents) . '.php');
 			$pageContents .= 'Controller';
 			$pageContents = new $pageContents;
 			/** @noinspection PhpUndefinedMethodInspection */
