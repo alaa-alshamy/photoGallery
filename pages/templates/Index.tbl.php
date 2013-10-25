@@ -88,7 +88,7 @@
 		<span>إبحث عن صورة:</span>
 	</div>
 	<div class="blockBody">
-		<form class="right">
+		<form class="right" style="padding: 40px 40px;">
 			<label for="picName">اسم الصورة: </label><input name="picName" id="picName">
 		</form>
 		<img class="left" src="../../images/search(3).png">
@@ -97,7 +97,7 @@
 </div>
 <div class="sections">
     <div class="blockHead">
-        <a>أقسام معرض الصور:</a>
+        <span>أقسام معرض الصور:</span>
     </div>
     <div class="blockBody">
 		<table>

@@ -7,9 +7,13 @@
  * To change this template use File | Settings | File Templates.
  */
 include_once __DIR__ . '/autoload.php';
-
-if($por = strstr($_SERVER['REQUEST_URI'], '&XDEBUG_SESSION_START=', true)){$_SERVER['REQUEST_URI'] = $por;}
-$_GET['page'] = $_SERVER['REQUEST_URI'];
+if($_GET['request'] && $_GET['request'] != '/')
+{
+	$_GET['page'] = $_GET['request'];
+}
+else{
+	$_GET['page'] = '/index.php';
+}
 
 function choosePage()
 {
