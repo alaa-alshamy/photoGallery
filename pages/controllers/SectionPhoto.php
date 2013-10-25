@@ -14,8 +14,3 @@ class PageSectionPhotoController extends PageController
 
 	}
 }
-
-class PageSectionPhotoView extends PageView
-{
-
-}

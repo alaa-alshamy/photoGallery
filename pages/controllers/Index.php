@@ -14,8 +14,3 @@ class PageIndexController extends PageController
 		
 	}
 }
-
-class PageIndexView extends PageView
-{
-	
-}

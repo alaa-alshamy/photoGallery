@@ -11,8 +11,3 @@ class PageErrorController extends PageController
 {
 	
 }
-
-class PageErrorView extends PageView
-{
-	
-}

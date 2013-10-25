@@ -8,7 +8,7 @@
  */
 
 spl_autoload_register(function ($class) {
-	$path = __DIR__ . '/classes/' . $class . '.php';
+	$path = __DIR__ . '/pages/classes/' . $class . '.php';
 	if(file_exists($path))
 	{
 		/** @noinspection PhpIncludeInspection */

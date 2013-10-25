@@ -6,7 +6,7 @@
  * Time: 6:27 PM
  * To change this template use File | Settings | File Templates.
  */
-include_once __DIR__ . '/autoload.php';
+include_once __DIR__ . '/../autoload.php';
 if($_GET['request'] && $_GET['request'] != '/')
 {
 	$_GET['page'] = $_GET['request'];

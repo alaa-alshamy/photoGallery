@@ -8,14 +8,9 @@
  */
 abstract class PageController
 {
-	/**
-	 * @var PageView
-	 */
-	public $view;
 	public function Start()
 	{
 		$this->content();
-		$this->createView();
 		$this->OutPut();
 	}
 	
@@ -26,14 +21,17 @@ abstract class PageController
 		header('location : '. $url);
 	}
 	
-	public function createView()
-	{
-		$view = str_replace('Controller', 'View', get_class($this));
-		$this->view = new $view;
-	}
-	
 	public function OutPut()
 	{
-		$this->view->Display();
+		$this->Display();
+	}
+
+	public function Display()
+	{
+		header("Content-Type:text/html; charset=utf-8");
+		/** @noinspection PhpUnusedLocalVariableInspection */
+		$var = $this;
+
+		include_once __DIR__ . '/../templates/layout.tbl.php';
 	}
 }
