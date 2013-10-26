@@ -17,10 +17,10 @@
 	<meta name="author" content="Engr. Alaa AlShamey">
 	<meta name="description" content="تصاميم , صور , بانرات">
 	<meta name="keywords" content="تصاميم , صور , بانرات">
-	<link rel="stylesheet" type="text/css" href="../../www/page.css" media="all">
-	<script src="../../www/jquery-1.7.2.min.js"></script>
-	<script src="../../www/jquery.easing.1.3.js"></script>
-	<script type="text/javascript" src="../../www/page.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="/page.css" media="all">
+	<script src="/jquery-1.7.2.min.js"></script>
+	<script src="/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="/page.js" type="text/javascript"></script>
 	<title><?=$var->pageTitle?></title>
 </head>
 <body>

@@ -73,12 +73,12 @@
 </script>
 <div class="banner">
 	<div class="slideBanner" style="width: 5826px">
-		<img src="../../www/images/imagesData/Alaa_AlShamey.jpg" alt="Alaa Al Shamey">
-		<img src="../../www/images/imagesData/Alaa.jpg" alt="Alaa Al Shamey">
-		<img src="../../www/images/imagesData/Alaa_AlShamey.jpg" alt="Alaa Al Shamey">
-		<img src="../../www/images/imagesData/Alaa.jpg" alt="Alaa Al Shamey">
-		<img src="../../www/images/imagesData/Alaa_AlShamey.jpg" alt="Alaa Al Shamey">
-		<img src="../../www/images/imagesData/Alaa.jpg" alt="Alaa Al Shamey">
+		<img src="/images/imagesData/Alaa_AlShamey.jpg" alt="Alaa Al Shamey">
+		<img src="/images/imagesData/Alaa.jpg" alt="Alaa Al Shamey">
+		<img src="/images/imagesData/Alaa_AlShamey.jpg" alt="Alaa Al Shamey">
+		<img src="/images/imagesData/Alaa.jpg" alt="Alaa Al Shamey">
+		<img src="/images/imagesData/Alaa_AlShamey.jpg" alt="Alaa Al Shamey">
+		<img src="/images/imagesData/Alaa.jpg" alt="Alaa Al Shamey">
 	</div>
 	<div class="slidePrevious" style="display: none;">السابقة</div>
 	<div class="slideNext">التالية</div>
@@ -91,7 +91,7 @@
 		<form class="right" style="padding: 40px 40px;">
 			<label for="picName">اسم الصورة: </label><input name="picName" id="picName">
 		</form>
-		<img class="left" src="../../www/images/search(3).png">
+		<img class="left" src="/images/search(3).png">
 		<div class="clear"></div>
 	</div>
 </div>
@@ -104,60 +104,60 @@
 			<tr>
 				<td>
 					<div class="section">
-						<a><img src="../../www/images/imagesSections/search(4).png"></a>
+						<a><img src="/images/imagesSections/search(4).png"></a>
 					</div>
 				</td>
 				<td>
 					<div class="section">
-						<a><img src="../../www/images/imagesSections/search(4).png"></a>
-					</div>
-				</td>
-				<td>
-					<div class="section">
-
-						<a><img src="../../www/images/imagesSections/search(4).png"></a>
+						<a><img src="/images/imagesSections/search(4).png"></a>
 					</div>
 				</td>
 				<td>
 					<div class="section">
 
-						<a><img src="../../www/images/imagesSections/search(4).png"></a>
+						<a><img src="/images/imagesSections/search(4).png"></a>
 					</div>
 				</td>
 				<td>
 					<div class="section">
 
-						<a><img src="../../www/images/imagesSections/search(4).png"></a>
+						<a><img src="/images/imagesSections/search(4).png"></a>
+					</div>
+				</td>
+				<td>
+					<div class="section">
+
+						<a><img src="/images/imagesSections/search(4).png"></a>
 					</div>
 				</td>
 			</tr>
 			<tr>
 				<td>
 					<div class="section">
-						<a><img src="../../www/images/imagesSections/search(4).png"></a>
+						<a><img src="/images/imagesSections/search(4).png"></a>
 					</div>
 				</td>
 				<td>
 					<div class="section">
-						<a><img src="../../www/images/imagesSections/search(4).png"></a>
-					</div>
-				</td>
-				<td>
-					<div class="section">
-
-						<a><img src="../../www/images/imagesSections/search(4).png"></a>
+						<a><img src="/images/imagesSections/search(4).png"></a>
 					</div>
 				</td>
 				<td>
 					<div class="section">
 
-						<a><img src="../../www/images/imagesSections/search(4).png"></a>
+						<a><img src="/images/imagesSections/search(4).png"></a>
 					</div>
 				</td>
 				<td>
 					<div class="section">
 
-						<a><img src="../../www/images/imagesSections/search(4).png"></a>
+						<a><img src="/images/imagesSections/search(4).png"></a>
+					</div>
+				</td>
+				<td>
+					<div class="section">
+
+						<a><img src="/images/imagesSections/search(4).png"></a>
 					</div>
 				</td>
 			</tr>

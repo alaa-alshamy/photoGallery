@@ -32,6 +32,6 @@ abstract class PageController
 		/** @noinspection PhpUnusedLocalVariableInspection */
 		$var = $this;
 
-		include_once __DIR__ . '/../templates/layout.tbl.php';
+		include_once __DIR__ . '/../pages/templates/layout.tbl.php';
 	}
 }
