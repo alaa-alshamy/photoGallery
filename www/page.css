@@ -2,8 +2,9 @@ body{
     margin: 1px;
     padding: 0;
     text-align: justify;
-    background-color: #222E38;
+	background: #222E38 url("../../images/1234.jpg") repeat-x fixed;
     font-size: 14px;
+	background-size: 100% 100%;
 }
 
 .page {
@@ -23,7 +24,7 @@ body{
 .banner {
     height: 315px;
     width: auto;
-    border: 1px solid #AABBDD;
+    border: 1px solid #000000;
     border-radius: 10px;
     overflow: hidden;
     position: relative;    
@@ -130,4 +131,58 @@ input    {
 .section > a > img {
 	width: 146px;
 	height: 146px;
+}
+.smallPhotoBar{
+	margin: 20px 0 20px 0;
+	background-color: #DBD3CD;
+	border: 1px solid #E6E8EA;
+	border-radius: 10px;
+	overflow: auto;
+}
+.smallPhoto{
+	float: left;
+	height: 150px;
+	width: 150px;
+	margin: 10px 20px 10px 15px;
+	background-color: #F6F8FA;
+	border: 1px solid #77AADD;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.smallPhoto > a > img {
+	width: 146px;
+	height: 146px;
+}
+.currentPhoto{
+	margin: 20px 0 20px 0;
+	border-radius: 10px;
+}
+.bigPhoto{
+	height: 500px;
+	width: 850px;
+	margin: 10px 60px 10px 15px;
+	background-color: #F6F8FA;
+	border: 1px solid #77AADD;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.bigPhoto > a > img {
+	height: 500px;
+	width: 850px;
+
+}
+#Sidebar {
+	position: fixed;
+	bottom: 343px;
+	width: 40px;
+	background-color: rgb(0,0,0) ;
+	padding: 20px 20px 0 20px;
+	position: absolute;
+	left: -65px;
+	z-index: 100;
+	border-radius: 40px;
+}
+#Sidebar > img {
+	margin-bottom: 10px;
+	width: 40px ;
 }

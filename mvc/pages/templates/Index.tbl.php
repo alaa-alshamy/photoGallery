@@ -69,7 +69,23 @@
 			}
 			nextPreviousFadeInOut();
 		});
-	});
+		$(".slideNext").hover(
+			function() {
+				//mouse over
+				$(this).css('background-image', 'url("images/sliderNext(1).png")')
+			}, function() {
+				//mouse out
+				$(this).css('background-image', 'url("images/sliderNext.png")')
+			});
+		$(".slidePrevious").hover(
+			function() {
+				//mouse over
+				$(this).css('background-image', 'url("images/sliderPrevious(1).png")')
+			}, function() {
+				//mouse out
+				$(this).css('background-image', 'url("images/sliderPrevious.png")')
+			});
+	});//end ready
 </script>
 <div class="banner">
 	<div class="slideBanner" style="width: <?php echo (count($var->arrayBannerPhotoName)*971);?>px">
