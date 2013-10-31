@@ -20,6 +20,7 @@
 	<link rel="stylesheet" type="text/css" href="/page.css" media="all">
 	<script src="/jquery-1.7.2.min.js"></script>
 	<script src="/jquery.easing.1.3.js"></script>
+	<script src="/jquery.color.js"></script>
 	<script type="text/javascript" src="/page.js" type="text/javascript"></script>
 	<title><?=$var->pageTitle?></title>
 </head>
@@ -31,7 +32,12 @@
 		</noscript>
 		<?php include_once(str_replace('Page', __DIR__ .'/', str_replace('Controller', '', get_class($var))).'.tbl.php')?>
 	</div>
-</div>	
 
+</div>
+<div id="Sidebar">
+	<img src="images/123.png" id="1">
+	<img src="images/456.png" id="2">
+	<img src="images/feedback(1).png" id="3">
+</div>
 </body>
 </html>

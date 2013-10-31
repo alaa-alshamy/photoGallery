@@ -85,7 +85,7 @@
 				//mouse out
 				$(this).css('background-image', 'url("images/sliderPrevious.png")')
 			});
-	});
+	});//end ready
 </script>
 <div class="banner">
 	<div class="slideBanner" style="width: 5826px">
