@@ -9,8 +9,44 @@
 
 class PageIndexController extends PageController
 {
+	public $arrayBannerPhotoName;
+	public $arraySectionsPhotoName;
+	public $arraySectionsId;
+	
 	public function content()
 	{
-		
+		$this->getNameBannerPhoto();
+		$this->getSections();
+	}
+	
+	public function getSections()
+	{
+		if ($handle = opendir(__DIR__ . '/../../../www/images/imagesSections'))
+		{
+			while (false !== ($entry = readdir($handle)))
+			{
+				if($entry != '.' && $entry != '..')
+				{
+					$this->arraySectionsPhotoName[] = $entry;
+					$this->arraySectionsId[] = strstr($entry, '-', true);
+				}
+			}
+			closedir($handle);
+		}
+	}
+	
+	public function getNameBannerPhoto()
+	{
+		if ($handle = opendir(__DIR__ . '/../../../www/images/imagesBanner')) 
+		{
+			while (false !== ($entry = readdir($handle))) 
+			{
+				if($entry != '.' && $entry != '..')
+				{
+					$this->arrayBannerPhotoName[] = $entry;
+				}
+			}
+			closedir($handle);
+		}
 	}
 }

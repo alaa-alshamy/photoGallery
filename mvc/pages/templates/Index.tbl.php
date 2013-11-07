@@ -88,13 +88,13 @@
 	});//end ready
 </script>
 <div class="banner">
-	<div class="slideBanner" style="width: 5826px">
-		<img src="/images/imagesData/Alaa_AlShamey.jpg" alt="Alaa Al Shamey">
-		<img src="/images/imagesData/Alaa.jpg" alt="Alaa Al Shamey">
-		<img src="/images/imagesData/Alaa_AlShamey.jpg" alt="Alaa Al Shamey">
-		<img src="/images/imagesData/Alaa.jpg" alt="Alaa Al Shamey">
-		<img src="/images/imagesData/Alaa_AlShamey.jpg" alt="Alaa Al Shamey">
-		<img src="/images/imagesData/Alaa.jpg" alt="Alaa Al Shamey">
+	<div class="slideBanner" style="width: <?php echo (count($var->arrayBannerPhotoName)*971);?>px">
+		<?php
+			foreach($var->arrayBannerPhotoName as $photoName)
+			{
+				?><img src="/images/imagesBanner/<?php echo $photoName;?>" alt="<?php echo strstr($photoName, '.', true);?>"><?php
+			}
+		?>
 	</div>
 	<div class="slidePrevious" style="display: none;">السابقة</div>
 	<div class="slideNext">التالية</div>
