@@ -9,8 +9,45 @@
 
 class PageSectionPhotoController extends PageController
 {
+	public $arrayImagesName;
+	public $sectionFound;
+
 	public function content()
 	{
+		$this->getImagesNames();
+	}
 
+	public function getImagesNames()
+	{
+		if($this->checkSectionFound())
+		{
+			if ($handle = opendir(__DIR__ . '/../../../www/images/imagesData'))
+			{
+				while (false !== ($entry = readdir($handle)))
+				{
+					if(preg_match('~\.\w~', $entry) && strstr($entry, '-', true) == $_GET['sid'])
+					{
+						$this->arrayImagesName[] = $entry;
+					}
+				}
+				closedir($handle);
+			}
+		}
+	}
+
+	public function checkSectionFound()
+	{
+		if ($handle = opendir(__DIR__ . '/../../../www/images/imagesSections'))
+		{
+			while (false !== ($entry = readdir($handle)))
+			{
+				if(preg_match('~\.\w~', $entry) && (strstr($entry, '-', true) == $_GET['sid']))
+				{
+					return $this->sectionFound = true;
+				}
+			}
+			closedir($handle);
+		}
+		return $this->sectionFound = false;
 	}
 }

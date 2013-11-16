@@ -8,6 +8,13 @@
  */
 abstract class PageController
 {
+	public $arrayImagesType = array(
+									'.jpg',
+									'.jpeg',
+									'.gif',
+									'.png',
+								);
+
 	public function Start()
 	{
 		$this->content();
@@ -29,9 +36,6 @@ abstract class PageController
 	public function Display()
 	{
 		header("Content-Type:text/html; charset=utf-8");
-		/** @noinspection PhpUnusedLocalVariableInspection */
-		$var = $this;
-
 		include_once __DIR__ . '/../pages/templates/layout.tbl.php';
 	}
 }

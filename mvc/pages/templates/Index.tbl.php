@@ -6,7 +6,7 @@
  * Time: 7:09 PM
  * To change this template use File | Settings | File Templates.
  */
-/** @var $var */?>
+?>
 <script>
 	$(document).ready(function(){
 		var countSlide = $('.slideBanner > img').length -1;
@@ -88,9 +88,9 @@
 	});//end ready
 </script>
 <div class="banner">
-	<div class="slideBanner" style="width: <?php echo (count($var->arrayBannerPhotoName)*971);?>px">
+	<div class="slideBanner" style="width: <?php echo (count($this->arrayBannerPhotoName)*971);?>px">
 		<?php
-			foreach($var->arrayBannerPhotoName as $photoName)
+			foreach($this->arrayBannerPhotoName as $photoName)
 			{
 				?><img src="/images/imagesBanner/<?php echo $photoName;?>" alt="<?php echo strstr($photoName, '.', true);?>"><?php
 			}
@@ -107,7 +107,7 @@
 		<form class="right" style="padding: 40px 40px;">
 			<label for="picName">اسم الصورة: </label><input name="picName" id="picName">
 		</form>
-		<img class="left" src="/images/search(3).png">
+		<img class="searchImage left" src="/images/search(3).png">
 		<div class="clear"></div>
 	</div>
 </div>
@@ -116,67 +116,16 @@
         <span>أقسام معرض الصور:</span>
     </div>
     <div class="blockBody">
-		<table>
-			<tr>
-				<td>
+	    <?php
+			foreach($this->arraySectionsPhotoName as $sectionPhotoName)
+			{?>
+	            <a href="/sectionphoto.php?sid=<?php echo strstr($sectionPhotoName, '-', true);?>">
 					<div class="section">
-						<a><img src="/images/imagesSections/search(4).png"></a>
+						<img class="sectionImage" src="/images/imagesSections/<?php echo $sectionPhotoName;?>" alt="<?php echo strstr(str_replace('-', '', strstr($sectionPhotoName, '-')), '.', true);?>">
 					</div>
-				</td>
-				<td>
-					<div class="section">
-						<a><img src="/images/imagesSections/search(4).png"></a>
-					</div>
-				</td>
-				<td>
-					<div class="section">
-
-						<a><img src="/images/imagesSections/search(4).png"></a>
-					</div>
-				</td>
-				<td>
-					<div class="section">
-
-						<a><img src="/images/imagesSections/search(4).png"></a>
-					</div>
-				</td>
-				<td>
-					<div class="section">
-
-						<a><img src="/images/imagesSections/search(4).png"></a>
-					</div>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<div class="section">
-						<a><img src="/images/imagesSections/search(4).png"></a>
-					</div>
-				</td>
-				<td>
-					<div class="section">
-						<a><img src="/images/imagesSections/search(4).png"></a>
-					</div>
-				</td>
-				<td>
-					<div class="section">
-
-						<a><img src="/images/imagesSections/search(4).png"></a>
-					</div>
-				</td>
-				<td>
-					<div class="section">
-
-						<a><img src="/images/imagesSections/search(4).png"></a>
-					</div>
-				</td>
-				<td>
-					<div class="section">
-
-						<a><img src="/images/imagesSections/search(4).png"></a>
-					</div>
-				</td>
-			</tr>
-		</table>
+				</a><?php
+			}
+	    ?>
+	    <div class="clear"></div>
     </div>
 </div>

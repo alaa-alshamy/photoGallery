@@ -6,7 +6,7 @@
  * Time: 4:45 PM
  * To change this template use File | Settings | File Templates.
  */
-/** @var $var */?>
+?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <?/////////////////////////////////////   head   ////////////////////////////////////?>
@@ -22,7 +22,7 @@
 	<script src="/jquery.easing.1.3.js"></script>
 	<script src="/jquery.color.js"></script>
 	<script type="text/javascript" src="/page.js" type="text/javascript"></script>
-	<title><?=$var->pageTitle?></title>
+	<title><?=$this->pageTitle?></title>
 </head>
 <body>
 <div class="page">
@@ -30,7 +30,7 @@
 		<noscript>
 			<p class="boxAlert">تنبيه: كثير من خدمات الموقع لن تعمل لديك! لأن الجافاسكربت لا تعمل في المتصفح الذي تستخدمه الآن. يرجى تفعيلها للحصول على كل خدمات الموقع.</p>
 		</noscript>
-		<?php include_once(str_replace('Page', __DIR__ .'/', str_replace('Controller', '', get_class($var))).'.tbl.php')?>
+		<?php include_once(str_replace('Page', __DIR__ .'/', str_replace('Controller', '', get_class($this))).'.tbl.php')?>
 	</div>
 
 </div>

@@ -11,11 +11,10 @@ class PageIndexController extends PageController
 {
 	public $arrayBannerPhotoName;
 	public $arraySectionsPhotoName;
-	public $arraySectionsId;
-	
+
 	public function content()
 	{
-		$this->getNameBannerPhoto();
+		$this->getPhotoBanner();
 		$this->getSections();
 	}
 	
@@ -25,23 +24,22 @@ class PageIndexController extends PageController
 		{
 			while (false !== ($entry = readdir($handle)))
 			{
-				if($entry != '.' && $entry != '..')
+				if(preg_match('~\.\w~', $entry))
 				{
 					$this->arraySectionsPhotoName[] = $entry;
-					$this->arraySectionsId[] = strstr($entry, '-', true);
 				}
 			}
 			closedir($handle);
 		}
 	}
 	
-	public function getNameBannerPhoto()
+	public function getPhotoBanner()
 	{
 		if ($handle = opendir(__DIR__ . '/../../../www/images/imagesBanner')) 
 		{
 			while (false !== ($entry = readdir($handle))) 
 			{
-				if($entry != '.' && $entry != '..')
+				if(preg_match('~\.\w~', $entry))
 				{
 					$this->arrayBannerPhotoName[] = $entry;
 				}

@@ -2,7 +2,7 @@ body{
     margin: 1px;
     padding: 0;
     text-align: justify;
-	background: #222E38 url("../../images/1234.jpg") repeat-x fixed;
+	background: #222E38 url("/images/1234.jpg") repeat-x fixed;
     font-size: 14px;
 	background-size: 100% 100%;
 }
@@ -91,7 +91,7 @@ body{
 	height: 100%;
 
 }
-.blockBody > img {
+.searchImage {
     width: 500px;
     height: 150px;
 }
@@ -119,18 +119,17 @@ input    {
 
 }
 .section {
-	float: left;
+	float: right;
 	height: 150px;
-	width:150px ;
-	margin: 10px 20px 10px 15px;
+	width:138px ;
+	margin: 10px;
 	background-color: #F6F8FA;
 	border: 1px solid #77AADD;
 	border-radius: 5px;
-	overflow: hidden;
 }
-.section > a > img {
-	width: 146px;
-	height: 146px;
+.sectionImage {
+	width: 138px;
+	height: 150px;
 }
 .smallPhotoBar{
 	margin: 20px 0 20px 0;
@@ -140,18 +139,18 @@ input    {
 	overflow: auto;
 }
 .smallPhoto{
-	float: left;
+	float: right;
 	height: 150px;
 	width: 150px;
-	margin: 10px 20px 10px 15px;
+	margin: 10px;
 	background-color: #F6F8FA;
 	border: 1px solid #77AADD;
 	border-radius: 5px;
-	overflow: hidden;
+	cursor: pointer;
 }
-.smallPhoto > a > img {
-	width: 146px;
-	height: 146px;
+.smallPhoto > img {
+	width: 150px;
+	height: 150px;
 }
 .currentPhoto{
 	margin: 20px 0 20px 0;
@@ -166,7 +165,7 @@ input    {
 	border-radius: 5px;
 	overflow: hidden;
 }
-.bigPhoto > a > img {
+.bigPhoto > img {
 	height: 500px;
 	width: 850px;
 
