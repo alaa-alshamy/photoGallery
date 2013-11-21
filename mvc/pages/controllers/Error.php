@@ -9,5 +9,8 @@
 
 class PageErrorController extends PageController
 {
-	
+	public function content()
+	{
+		$this->setPageTitle('خطأ :: ');
+	}
 }

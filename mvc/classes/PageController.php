@@ -8,6 +8,7 @@
  */
 abstract class PageController
 {
+	public $pageTitle;
 	public $arrayImagesType = array(
 									'.jpg',
 									'.jpeg',
@@ -37,5 +38,10 @@ abstract class PageController
 	{
 		header("Content-Type:text/html; charset=utf-8");
 		include_once __DIR__ . '/../pages/templates/layout.tbl.php';
+	}
+	
+	public function setPageTitle($pageTitle)
+	{
+		$this->pageTitle = $pageTitle;
 	}
 }

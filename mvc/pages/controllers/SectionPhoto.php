@@ -11,10 +11,12 @@ class PageSectionPhotoController extends PageController
 {
 	public $arrayImagesName;
 	public $sectionFound;
+	public $nameSectionPhoto;
 
 	public function content()
 	{
 		$this->getImagesNames();
+		$this->setPageTitle(strstr(str_replace('-', '', strstr($this->nameSectionPhoto, '-')), '.', true) . ' :: ');
 	}
 
 	public function getImagesNames()
@@ -41,8 +43,9 @@ class PageSectionPhotoController extends PageController
 		{
 			while (false !== ($entry = readdir($handle)))
 			{
-				if(preg_match('~\.\w~', $entry) && (strstr($entry, '-', true) == $_GET['sid']))
+				if(preg_match('~\.\w~', $entry) && (isset($_GET['sid']) && strstr($entry, '-', true) == $_GET['sid']))
 				{
+					$this->nameSectionPhoto = $entry;
 					return $this->sectionFound = true;
 				}
 			}

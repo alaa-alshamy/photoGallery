@@ -14,6 +14,7 @@ class PageIndexController extends PageController
 
 	public function content()
 	{
+		$this->setPageTitle('معرض الصور');
 		$this->getPhotoBanner();
 		$this->getSections();
 	}

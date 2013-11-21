@@ -22,7 +22,7 @@ if($this->sectionFound){
 				$(this).remove();
 			});
 		});*/
-		$('.smallPhoto').click(function(evt) {
+		$('.smallPhoto').click(function() {
 			//get path to new image
 			var imgPath = $(this).children().attr('src');
 			//get reference to old image#photo
@@ -66,7 +66,7 @@ if($this->sectionFound){
 </div>
 <?php
 	}else{?>
-		<div class="note">عفوا لا يوجد صور متاحة في هذا القسم.</div><?php
+		<div class="error">عفوا لا يوجد صور متاحة في هذا القسم.</div><?php
 	}
 }else{?>
 	<div class="error">عفوا إما لم يتم تحديد قسم أو ان القسم المطلوب غير موجود.</div><?php

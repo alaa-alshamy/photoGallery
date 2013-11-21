@@ -22,22 +22,22 @@
 	<script src="/jquery.easing.1.3.js"></script>
 	<script src="/jquery.color.js"></script>
 	<script type="text/javascript" src="/page.js" type="text/javascript"></script>
-	<title><?=$this->pageTitle?></title>
+	<title><?php echo htmlspecialchars($this->pageTitle);?>معرض الصور</title>
 </head>
 <body>
-<div class="page">
-	<div class="pageContent">
-		<noscript>
-			<p class="boxAlert">تنبيه: كثير من خدمات الموقع لن تعمل لديك! لأن الجافاسكربت لا تعمل في المتصفح الذي تستخدمه الآن. يرجى تفعيلها للحصول على كل خدمات الموقع.</p>
-		</noscript>
-		<?php include_once(str_replace('Page', __DIR__ .'/', str_replace('Controller', '', get_class($this))).'.tbl.php')?>
+	<div class="page">
+		<div class="pageContent">
+			<noscript>
+				<p class="boxAlert">تنبيه: كثير من خدمات الموقع لن تعمل لديك! لأن الجافاسكربت لا تعمل في المتصفح الذي تستخدمه الآن. يرجى تفعيلها للحصول على كل خدمات الموقع.</p>
+			</noscript>
+			<?php include_once(str_replace('Page', __DIR__ .'/', str_replace('Controller', '', get_class($this))).'.tbl.php')?>
+		</div>
+	
 	</div>
-
-</div>
-<div id="Sidebar">
-	<img src="images/123.png" id="1">
-	<img src="images/456.png" id="2">
-	<img src="images/feedback(1).png" id="3">
-</div>
+	<div id="Sidebar">
+		<img src="images/123.png" id="1">
+		<img src="images/456.png" id="2">
+		<img src="images/feedback(1).png" id="3">
+	</div>
 </body>
 </html>
