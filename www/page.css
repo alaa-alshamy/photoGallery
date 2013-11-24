@@ -163,12 +163,13 @@ input    {
 	background-color: #F6F8FA;
 	border: 1px solid #77AADD;
 	border-radius: 5px;
+	position: relative;
 	overflow: hidden;
 }
 .bigPhoto > img {
 	height: 500px;
 	width: 850px;
-
+	position: absolute;
 }
 #Sidebar {
 	position: fixed;
