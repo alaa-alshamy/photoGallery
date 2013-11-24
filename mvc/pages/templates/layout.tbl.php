@@ -18,7 +18,9 @@
 	<meta name="description" content="تصاميم , صور , بانرات">
 	<meta name="keywords" content="تصاميم , صور , بانرات">
 	<link rel="stylesheet" type="text/css" href="/page.css" media="all">
+	<link href="/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet">
 	<script src="/jquery-1.7.2.min.js"></script>
+	<script src="/fancybox/jquery.fancybox-1.3.4.min.js"></script>
 	<script src="/jquery.easing.1.3.js"></script>
 	<script src="/jquery.color.js"></script>
 	<script type="text/javascript" src="/page.js" type="text/javascript"></script>
@@ -34,10 +36,22 @@
 		</div>
 	
 	</div>
-	<div id="Sidebar">
-		<img src="images/123.png" id="1">
-		<img src="images/456.png" id="2">
-		<img src="images/feedback(1).png" id="3">
-	</div>
+    <div id="Sidebar">
+        <a><img src="images/123.png" id="1"></a>
+        <a><img src="images/456.png" id="2"></a>
+        <a id="feedbackLink" href="#feedbackForm"><img src="images/feedback(1).png" id="3"></a>
+    </div>
+    <div id="feedbackButton">
+        <form action="" method="get" id="feedbackForm">
+            الاسم:<br>
+            <input type="text" name="name" placeholder="الاسم" class="text"><br>
+            البريد الإلكتروني:<br>
+            <input type="text" name="mail" placeholder="البريد الإلكتروني" class="text"><br>
+            نص الرسالة:<br>
+            <textarea></textarea>
+            <br>
+            <input type="submit" value="إرسال" class="button">
+        </form>
+    </div>
 </body>
 </html>

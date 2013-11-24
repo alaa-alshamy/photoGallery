@@ -45,4 +45,7 @@ $("#3").hover(
 		//mouse out
 		$(this).attr('src', "images/feedback(1).png")
 	});
+	$('#feedbackButton').hide();
+	$('#feedbackLink').fancybox({
+	});
 });//end ready

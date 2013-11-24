@@ -86,6 +86,7 @@
 				$(this).css('background-image', 'url("images/sliderPrevious.png")')
 			});
 	});//end ready
+
 </script>
 <div class="banner">
 	<div class="slideBanner" style="width: <?php echo (count($this->arrayBannerPhotoName)*971);?>px">
@@ -105,7 +106,7 @@
 	</div>
 	<div class="blockBody">
 		<form class="right" style="padding: 40px 40px;">
-			<label for="picName">اسم الصورة: </label><input name="picName" id="picName">
+			<label for="searchImage">اسم الصورة: </label><input name="searchImage" id="searchImage">
 		</form>
 		<img class="searchImage left" src="/images/search(3).png">
 		<div class="clear"></div>
