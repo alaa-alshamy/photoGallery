@@ -10,18 +10,6 @@ if($this->sectionFound){
 	if(count($this->arrayImagesName)){?>
 <script>
 	$(document).ready(function(){
-		/*$('.smallPhoto').click(function(evt){
-			evt.preventDefault();
-			var oldImage = $('.bigPhoto > img');
-			var imgPath = $(this).children().attr('src');
-			var newImage = $('<img src="' + imgPath + '">');
-			newImage.hide();
-			$('.bigPhoto').prepend(newImage);
-			newImage.fadeIn(1000);
-			oldImage.fadeOut(1000, function(){
-				$(this).remove();
-			});
-		});*/
 		$('.smallPhoto').click(function() {
 			//get path to new image
 			var imgPath = $(this).children().attr('src');
@@ -32,7 +20,7 @@ if($this->sectionFound){
 			var newImage = $('<img src="' + imgPath +'">');
 			//make new image invisible
 			newImage.hide();
-			//add to the #photo div
+			//add to the .bigPhoto div
 			$('.bigPhoto').prepend(newImage);
 			//fade in new image
 			newImage.fadeIn(1000);

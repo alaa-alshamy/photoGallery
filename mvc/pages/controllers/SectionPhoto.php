@@ -39,17 +39,20 @@ class PageSectionPhotoController extends PageController
 
 	public function checkSectionFound()
 	{
-		if ($handle = opendir(__DIR__ . '/../../../www/images/imagesSections'))
+		if(isset($_GET['sid']) && $_GET['sid'])
 		{
-			while (false !== ($entry = readdir($handle)))
+			if ($handle = opendir(__DIR__ . '/../../../www/images/imagesSections'))
 			{
-				if(preg_match('~\.\w~', $entry) && (isset($_GET['sid']) && strstr($entry, '-', true) == $_GET['sid']))
+				while (false !== ($entry = readdir($handle)))
 				{
-					$this->nameSectionPhoto = $entry;
-					return $this->sectionFound = true;
+					if(preg_match('~\.\w~', $entry) && strstr($entry, '-', true) == $_GET['sid'])
+					{
+						$this->nameSectionPhoto = $entry;
+						return $this->sectionFound = true;
+					}
 				}
+				closedir($handle);
 			}
-			closedir($handle);
 		}
 		return $this->sectionFound = false;
 	}
