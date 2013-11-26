@@ -44,11 +44,11 @@
     <div id="feedbackButton">
         <form action="" method="get" id="feedbackForm">
             الاسم:<br>
-            <input type="text" name="name" placeholder="الاسم" class="text"><br>
+            <input type="text" name="name" placeholder="  الاسم" class="text"><br>
             البريد الإلكتروني:<br>
-            <input type="text" name="mail" placeholder="البريد الإلكتروني" class="text"><br>
+            <input type="text" name="mail" placeholder="  البريد الإلكتروني" class="text"><br>
             نص الرسالة:<br>
-            <textarea></textarea>
+            <textarea placeholder="أكتب الرسالة"></textarea>
             <br>
             <input type="submit" value="إرسال" class="button">
         </form>
