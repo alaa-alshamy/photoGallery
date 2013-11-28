@@ -18,15 +18,24 @@ abstract class PageController
 
 	public function Start()
 	{
+		
 		$this->content();
 		$this->OutPut();
 	}
 	
+	public function checkRequest()
+	{
+		if(strpos($_SERVER['REQUEST_URI'], '/adm/') !== false && (!isset($_COOKIE['admPhoGall']) || $_COOKIE['admPhoGall']))
+		{
+			$this->End('');
+		}
+	}
 	public function content(){}
 	
 	public function End($url)
 	{
 		header('location : '. $url);
+		exit();
 	}
 	
 	public function OutPut()
